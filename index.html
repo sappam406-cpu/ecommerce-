@@ -1,0 +1,778 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>amazon-clone-ui</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/amazonlogo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body id="top">
+    <header>
+        <div class="nav-bar">     
+            <div class="nav-logo">
+                <div class="logo border" >amazon</div>
+            </div> 
+            <div class="nav-adress border">
+                <p class="address">Deliver to</p>
+                <div class="adr-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="country">India</p>
+                </div>
+            </div>
+            <div class="nav-search">
+                <select class="search-select">
+                    <option>All</option>
+                </select>
+                <input placeholder="Search Products" class="search-input">
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+            <div class="nav-lang border">
+                <!--
+                <img src="images/flag.webp" style="height: 14px; width: 18px; margin-left: 12px; cursor: pointer;">
+                -->
+               <select class="lang">
+                 <option >EN</option>
+               </select>
+            </div>
+            <div class="sign border">
+                <p class="sig">Hello, sign in</p>
+                <select class="acc">
+                    <option>Account & Lists</option>
+                </select>
+            </div>
+            <div class="returns border">
+                <p class="ret">Returns</p>
+                <p class="ord">& Orders</p>
+            </div>
+            <div class="cart border">
+                <i class="fa-solid fa-cart-shopping" id="cart"></i>
+                <p class="res">Cart</p>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="bars border">
+                <i class="fa-solid fa-bars"></i>
+                <p class="all">All</p>
+            </div>
+            <nav >
+                <a href="#" class="border">Today's Deals</a>
+                <a href="#" class="border">Gift Card's</a>
+                <a href="#" class="border">Sell</a>
+                <a href="#" class="border">Registry</a>
+                <a href="#" class="border">Prime Video</a>
+                <a href="#" class="border">Customer Service</a>
+            </nav>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="hero-i">
+            <img src="images/hero.jpg">
+            <img src="images/hero1.jpg">
+            <img src="images/hero2.jpg">
+            <img src="images/hero3.jpg">
+        </div>
+        <div class="hero-content">
+            <!--
+            <p>You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery.</p>
+            <a href="https://www.amazon.in/">Click here to go to amazon.in</a>
+        -->
+            <p>
+                Welcome to my <strong>E-Commerce Clone</strong>. This frontend project is inspired by Amazon and built for educational purposes only. It is not affiliated with or endorsed by Amazon.
+            </p>
+            <a href="#">Explore the Demo</a>
+        </div>
+    </section>
+    <section class="product">
+        <div class="cards">
+            <p class="top">Gaming merchandise</p>
+            <div class="four">
+                <div class="item">
+                    <img src="images/four29.jpg">
+                    <p>Apparel</p>
+                </div>
+
+                <div class="item">
+                    <img src="images/four30.jpg">
+                    <p>Hats</p>
+                </div>
+
+                <div class="item">
+                    <img src="images/four31.jpg">
+                    <p>Action figures</p>
+                </div>
+
+                <div class="item">
+                    <img src="images/four32.jpg">
+                    <p>Mugs</p>
+                </div>
+            </div>
+            <p class="bottom">See more</p>
+        </div>
+        <div class="cards">
+            <p class="top">Shop Fashion for less</p>
+            <div class="four">
+                <div class="item">
+                    <img src="images/four1.jpg">
+                    <p>Jeans under $50</p>
+                </div>
+
+                <div class="item">
+                    <img src="images/four2.jpg">
+                    <p>Tops under $25</p>
+                </div>
+
+                <div class="item">
+                    <img src="images/four3.jpg">
+                    <p>Dresses under $30</p>
+                </div>
+
+                <div class="item">
+                    <img src="images/four4.jpg">
+                    <p>Shoes under $50</p>
+                </div>
+            </div>
+            <p class="bottom">See all deals</p>
+        </div>
+        <div class="cards">
+            <p class="top">Grilling must-haves for Dads</p>
+            <div class="four">
+                <div class="item">
+                    <img src="images/four5.jpg">
+                    <p>Grilling pans</p>
+                </div>
+
+                <div class="item">
+                    <img src="images/four6.jpg">
+                    <p>Aprons</p>
+                </div>
+
+                <div class="item">
+                    <img src="images/four7.jpg">
+                    <p>Grilling tools</p>
+                </div>
+
+                <div class="item">
+                    <img src="images/four8.jpg">
+                    <p>Gloves</p>
+                </div>
+            </div>
+            <p class="bottom">Shop Father's Day gifts</p>
+        </div>
+        <div class="cards">
+            <p class="top">Deals on top categories</p>
+            <div class="four">
+                <div class="item">
+                    <img src="images/four9.jpg">
+                    <p>Books</p>
+                </div>
+
+                <div class="item">
+                    <img src="images/four10.jpg">
+                    <p>Fashion</p>
+                </div>
+
+                <div class="item">
+                    <img src="images/four11.jpg">
+                    <p>PC</p>
+                </div>
+
+                <div class="item">
+                    <img src="images/four12.jpg">
+                    <p>Beauty</p>
+                </div>
+            </div>
+            <p class="bottom">Discover more</p>
+        </div>
+        <div class="cards">
+            <p class="top">New home arrivals under $50</p>
+            <div class="four">
+                <div class="item">
+                    <img src="images/four13.jpg">
+                    <p>kitchen & Dining</p>
+                </div>
+
+                <div class="item">
+                    <img src="images/four14.jpg">
+                    <p>Home Improvement</p>
+                </div>
+
+                <div class="item">
+                    <img src="images/four15.jpg">
+                    <p>Decor</p>
+                </div>
+
+                <div class="item">
+                    <img src="images/four16.jpg">
+                    <p>Bedding & Bath</p>
+                </div>
+            </div>
+            <p class="bottom">Shop the latest from Home</p>
+        </div>
+        <div class="cards">
+            <p class="top">Shop Father's Day deals</p>
+            <div class="four">
+                <div class="item">
+                    <img src="images/four17.jpg">
+                    <p>Apparel</p>
+                </div>
+
+                <div class="item">
+                    <img src="images/four18.jpg">
+                    <p>Personal Care</p>
+                </div>
+
+                <div class="item">
+                    <img src="images/four19.jpg">
+                    <p>Tech</p>
+                </div>
+
+                <div class="item">
+                    <img src="images/four20.jpg">
+                    <p>Shoes</p>
+                </div>
+            </div>
+            <p class="bottom">Explore more gifts</p>
+        </div>
+        <div class="cards">
+            <p class="top">Fashion trends you like</p>
+            <div class="four">
+                <div class="item">
+                    <img src="images/four21.jpg">
+                    <p>Dresses</p>
+                </div>
+
+                <div class="item">
+                    <img src="images/four22.jpg">
+                    <p>Knits</p>
+                </div>
+
+                <div class="item">
+                    <img src="images/four23.jpg">
+                    <p>Jackets</p>
+                </div>
+
+                <div class="item">
+                    <img src="images/four24.jpg">
+                    <p>Jewelry</p>
+                </div>
+            </div>
+            <p class="bottom">Explore more</p>
+        </div>
+        <div class="cards">
+            <p class="top">Updates for elevated spaces</p>
+            <div class="four">
+                <div class="item">
+                    <img src="images/four25.jpg">
+                    <p>Baskets & hampers</p>
+                </div>
+
+                <div class="item">
+                    <img src="images/four26.jpg">
+                    <p>Hardware</p>
+                </div>
+
+                <div class="item">
+                    <img src="images/four27.jpg">
+                    <p>Accent furniture</p>
+                </div>
+
+                <div class="item">
+                    <img src="images/four28.jpg">
+                    <p>Wallpaper & paint</p>
+                </div>
+            </div>
+            <p class="bottom">Shop home products</p>
+        </div>
+    </section>
+    <section class="best">
+        <div class="kit">Best Sellers in Home & Kitchen</div>
+        <div class="besth">
+            <img src="images/best1.jpg">
+            <img src="images/best2.jpg">
+            <img src="images/best3.jpg">
+            <img src="images/best4.jpg">
+            <img src="images/best5.jpg">
+            <img src="images/best6.jpg">
+            <img src="images/best7.jpg">
+            <img src="images/best8.jpg">
+            <img src="images/best9.jpg">
+            <img src="images/best10.jpg">
+            <img src="images/best11.jpg">
+            <img src="images/best12.jpg">    
+        </div>
+    </section>
+    <section class="products">
+        <div class="card">
+            <p class="top">Most-loved watches</p>
+            <div class="four">
+                <div class="item">
+                    <img src="images/four33.jpg">
+                    <p>Women</p>
+                </div>
+
+                <div class="item">
+                    <img src="images/four34.jpg">
+                    <p>Men</p>
+                </div>
+
+                <div class="item">
+                    <img src="images/four35.jpg">
+                    <p>Girls</p>
+                </div>
+
+                <div class="item">
+                    <img src="images/four36.jpg">
+                    <p>Boys</p>
+                </div>
+            </div>
+            <p class="bottom">Discover more</p>
+        </div>
+        <div class="card">
+            <p class="top">Toys for all ages</p>
+            <div class="four">
+                <div class="item">
+                    <img src="images/four37.jpg">
+                    <p>Ride on's</p>
+                </div>
+
+                <div class="item">
+                    <img src="images/four38.jpg">
+                    <p>Building & construction</p>
+                </div>
+
+                <div class="item">
+                    <img src="images/four39.jpg">
+                    <p>Dolls & Doll Houses</p>
+                </div>
+
+                <div class="item">
+                    <img src="images/four40.jpg">
+                    <p>Swimming pools</p>
+                </div>
+            </div>
+            <p class="bottom">See all</p>
+        </div>
+        <div class="card">
+            <p class="top">Finds for Home</p>
+            <div class="four">
+                <div class="item">
+                    <img src="images/four41.jpg">
+                    <p>Kitchen</p>
+                </div>
+
+                <div class="item">
+                    <img src="images/four42.jpg">
+                    <p>Home Decor</p>
+                </div>
+
+                <div class="item">
+                    <img src="images/four43.jpg">
+                    <p>Dining</p>
+                </div>
+
+                <div class="item">
+                    <img src="images/four44.jpg">
+                    <p>Smart Home</p>
+                </div>
+            </div>
+            <p class="bottom">See more</p>
+        </div>
+        <div class="card">
+            <p class="top">Explore more in Sports</p>
+            <div class="four">
+                <div class="item">
+                    <img src="images/four45.jpg">
+                    <p>Cycling</p>
+                </div>
+
+                <div class="item">
+                    <img src="images/four46.jpg">
+                    <p>Running</p>
+                </div>
+
+                <div class="item">
+                    <img src="images/four47.jpg">
+                    <p>Exercise & Fitness</p>
+                </div>
+
+                <div class="item">
+                    <img src="images/four48.jpg">
+                    <p>Golf</p>
+                </div>
+            </div>
+            <p class="bottom">Explore more</p>
+        </div>
+        <div class="card">
+            <p class="top">Gear up to get fit</p>
+            <div class="four">
+                <div class="item">
+                    <img src="images/four49.jpg">
+                    <p>Clothing</p>
+                </div>
+
+                <div class="item">
+                    <img src="images/four50.jpg">
+                    <p>Trackers</p>
+                </div>
+
+                <div class="item">
+                    <img src="images/four51.jpg">
+                    <p>Equipment</p>
+                </div>
+
+                <div class="item">
+                    <img src="images/four52.jpg">
+                    <p>Deals</p>
+                </div>
+            </div>
+            <p class="bottom">Discover more</p>
+        </div>
+        <div class="card">
+            <p class="top">Level up your beauty routine</p>
+            <div class="four">
+                <div class="item">
+                    <img src="images/four53.jpg">
+                    <p>Makeup</p>
+                </div>
+
+                <div class="item">
+                    <img src="images/four54.jpg">
+                    <p>Brushes</p>
+                </div>
+
+                <div class="item">
+                    <img src="images/four55.jpg">
+                    <p>Sponges</p>
+                </div>
+
+                <div class="item">
+                    <img src="images/four56.jpg">
+                    <p>Mirrors</p>
+                </div>
+            </div>
+            <p class="bottom">See more</p>
+        </div>
+        <div class="card">
+            <p class="top">Level up your gaming</p>
+            <div class="four">
+                <div class="item">
+                    <img src="images/four57.jpg">
+                    <p>PC gaming</p>
+                </div>
+
+                <div class="item">
+                    <img src="images/four58.jpg">
+                    <p>Xbox</p>
+                </div>
+
+                <div class="item">
+                    <img src="images/four59.jpg">
+                    <p>Playstation</p>
+                </div>
+
+                <div class="item">
+                    <img src="images/four60.jpg">
+                    <p>Nintendo Switch</p>
+                </div>
+            </div>
+            <p class="bottom">Shop the latest in gaming</p>
+        </div>
+        <div class="card">
+            <p class="top">Most-loved travel essentials</p>
+            <div class="four">
+                <div class="item">
+                    <img src="images/four61.jpg">
+                    <p>Backpacks</p>
+                </div>
+
+                <div class="item">
+                    <img src="images/four62.jpg">
+                    <p>Suitcases</p>
+                </div>
+
+                <div class="item">
+                    <img src="images/four63.jpg">
+                    <p>Accessories</p>
+                </div>
+
+                <div class="item">
+                    <img src="images/four64.jpg">
+                    <p>Handbags</p>
+                </div>
+            </div>
+            <p class="bottom">Discover more</p>
+        </div>
+    </section>
+    <section class="best">
+        <div class="kit">Best Sellers in Home & Kitchen</div>
+        <div class="besth">
+            <img src="images/best13.jpg">
+            <img src="images/best14.jpg">
+            <img src="images/best15.jpg">
+            <img src="images/best16.jpg">
+            <img src="images/best17.jpg">
+            <img src="images/best18.jpg">
+            <img src="images/best19.jpg">
+            <img src="images/best20.jpg">
+            <img src="images/best21.jpg">
+            <img src="images/best22.jpg">
+            <img src="images/best23.jpg">
+            <img src="images/best24.jpg">
+            <img src="images/best25.jpg">    
+        </div>
+    </section>
+    <section class="outer">
+        <div class="frame">
+            <div class="one">
+                <p>See personalized recommendations</p>
+            </div>
+            <div class="button">
+                <button>Sign in</button>
+            </div>
+            <div class="two">
+                <p>New customer? <a href="#"> Start here.</a></p>
+            </div>
+            
+        </div>
+    </section>
+    <footer class="panel1">
+        <a href="#top">Back to top</a>
+    </footer>
+    <footer class="panel2">
+        <div class="common">
+            <p>Get to Know Us</p>
+            <nav>
+                <p>Careers</p>
+                <p>Blog</p>
+                <p>About Amazon</p>
+                <p>Investor Relations</p>
+                <p>Amazon Devices</p>
+                <p>Amazon Science</p>
+            </nav>
+        </div>
+        <div class="common">
+            <p>Make Money with Us</p>
+            <nav>
+                <p>Sell products on Amazon</p>
+                <p>Sell on Amazon Business</p>
+                <p>Sell apps on Amazon</p>
+                <p>Become an Affiliate</p>
+                <p>Advertise Your Products</p>
+                <p>Self-Publish with US</p>
+                <p>Host an Amazon Hub</p>
+                <p>> See More Make Money <br>
+                    with Us
+                </p>
+            </nav>
+        </div>
+        <div class="common">
+            <p>Amazon Payment Products</p>
+            <nav>
+                <p>Amazon Business Card</p>
+                <p>Shop with Points</p>
+                <p>Reload Your Balance</p>
+                <p>Amazon currency converter</p>
+            </nav>
+        </div>
+        <div class="common">
+            <p>Let US Help You</p>
+            <nav>
+                <p>Amazon and COVID-<br>
+                19</p>
+                <p>Your Accounts</p>
+                <p>Your Orders</p>
+                <p>Shipping Rates &<br>
+                Policies</p>
+                <p>Returns&<br>
+                Replacements</p>
+                <p>Manage Your <br>
+                Content and Devices</p>
+                <p>Help</p>
+            </nav>
+        </div>
+
+    </footer>
+    <hr style="border: none; height: 1px; background-color: rgb(60, 70, 80); margin: 0;">
+    <footer class="panel3">
+        <div class="panel3-logo">
+            <img src="images/amazonlogo.png" style="height: 50px; width: 86px; margin-top: 6px; cursor: pointer;">
+        </div>
+        <div class="but">
+            <div class="a">
+                <i class="fa-solid fa-globe" style="height: 15px; width: 15px; margin-left: 12px; cursor: pointer;"></i>
+                <p style="font-size: 13px; color: #cccccc; padding:0px 7.8px; cursor: pointer;">English</p>
+                <i class="fa-solid fa-caret-up" style="color: rgb(130, 140, 150); margin-left:30px; margin-bottom: 7px; cursor: pointer;"></i>
+                <i class="fa-solid fa-sort-down" style="color: rgb(130, 140, 150); margin-left: -15px;"></i>
+            </div>
+            <div class="b">
+                <i class="fa-solid fa-indian-rupee-sign" style="color: #ffffff; margin-left: 8px;  cursor: pointer;"></i>
+                <p style="color: #cccccc; padding: 0px 7.8px; font-size: 13px; cursor: pointer;">INR-Indian Rupee</p>
+            </div>
+            <div class="c">
+                <img src="images/flag.webp" style="height: 12px; width: 14px; margin-left: 8px; cursor: pointer;">
+                <p style="color: #cccccc; padding: 0px 7.8px; font-size: 13px; cursor: pointer;">United States</p>
+            </div>
+        </div>
+    </footer>
+    <footer class="panel4">
+        <div class="panel-set">
+            <div class="here">
+                <p style="color: #dddddd; font-size: 12px;">Amazon Music</p>
+                <p style="color: #999999; font-size: 12px;">Stream millions <br>
+                of songs</p>
+            </div>
+            <div class="here">
+                <p style="color: #dddddd; font-size: 12px;">Amazon Music</p>
+                <p style="color: #999999; font-size: 12px;">Stream millions <br>
+                of songs</p>
+            </div>
+            <div class="here">
+                <p style="color: #dddddd; font-size: 12px;">Amazon Music</p>
+                <p style="color: #999999; font-size: 12px;">Stream millions <br>
+                of songs</p>
+            </div>
+            <div class="here">
+                <p style="color: #dddddd; font-size: 12px;">Amazon Music</p>
+                <p style="color: #999999; font-size: 12px;">Stream millions <br>
+                of songs</p>
+            </div>
+            <div class="here">
+                <p style="color: #dddddd; font-size: 12px;">Amazon Music</p>
+                <p style="color: #999999; font-size: 12px;">Stream millions <br>
+                of songs</p>
+            </div>
+            <div class="here">
+                <p style="color: #dddddd; font-size: 12px;">Amazon Music</p>
+                <p style="color: #999999; font-size: 12px;">Stream millions <br>
+                of songs</p>
+            </div>
+            <div class="here">
+                <p style="color: #dddddd; font-size: 12px;">Amazon Music</p>
+                <p style="color: #999999; font-size: 12px;">Stream millions <br>
+                of songs</p>
+            </div>
+            <div class="here1">
+                <p style="color: #dddddd; font-size: 12px;">Amazon Music</p>
+                <p style="color: #999999; font-size: 12px;">Stream millions <br>
+                of songs</p>
+            </div>
+            <div class="here1">
+                <p style="color: #dddddd; font-size: 12px;">Amazon Music</p>
+                <p style="color: #999999; font-size: 12px;">Stream millions <br>
+                of songs</p>
+            </div>
+            <div class="here1">
+                <p style="color: #dddddd; font-size: 12px;">Amazon Music</p>
+                <p style="color: #999999; font-size: 12px;">Stream millions <br>
+                of songs</p>
+            </div>
+            <div class="here1">
+                <p style="color: #dddddd; font-size: 12px;">Amazon Music</p>
+                <p style="color: #999999; font-size: 12px;">Stream millions <br>
+                of songs</p>
+            </div>
+            <div class="here1">
+                <p style="color: #dddddd; font-size: 12px;">Amazon Music</p>
+                <p style="color: #999999; font-size: 12px;">Stream millions <br>
+                of songs</p>
+            </div>
+            <div class="here1">
+                <p style="color: #dddddd; font-size: 12px;">Amazon Music</p>
+                <p style="color: #999999; font-size: 12px;">Stream millions <br>
+                of songs</p>
+            </div>
+            <div class="here1">
+                <p style="color: #dddddd; font-size: 12px;">Amazon Music</p>
+                <p style="color: #999999; font-size: 12px;">Stream millions <br>
+                of songs</p>
+            </div>
+            <div class="here2">
+                <p style="color: #dddddd; font-size: 12px;">Amazon Music</p>
+                <p style="color: #999999; font-size: 12px;">Stream millions <br>
+                of songs</p>
+            </div>
+            <div class="here2">
+                <p style="color: #dddddd; font-size: 12px;">Amazon Music</p>
+                <p style="color: #999999; font-size: 12px;">Stream millions <br>
+                of songs</p>
+            </div>
+            <div class="here2">
+                <p style="color: #dddddd; font-size: 12px;">Amazon Music</p>
+                <p style="color: #999999; font-size: 12px;">Stream millions <br>
+                of songs</p>
+            </div>
+            <div class="here2">
+                <p style="color: #dddddd; font-size: 12px;">Amazon Music</p>
+                <p style="color: #999999; font-size: 12px;">Stream millions <br>
+                of songs</p>
+            </div>
+            <div class="here2">
+                <p style="color: #dddddd; font-size: 12px;">Amazon Music</p>
+                <p style="color: #999999; font-size: 12px;">Stream millions <br>
+                of songs</p>
+            </div>
+            <div class="here2">
+                <p style="color: #dddddd; font-size: 12px;">Amazon Music</p>
+                <p style="color: #999999; font-size: 12px;">Stream millions <br>
+                of songs</p>
+            </div>
+            <div class="here2">
+                <p style="color: #dddddd; font-size: 12px;">Amazon Music</p>
+                <p style="color: #999999; font-size: 12px;">Stream millions <br>
+                of songs</p>
+            </div>
+            <div class="here3">
+            </div>
+            <div class="here3">
+                <p style="color: #dddddd; font-size: 12px;">Amazon Music</p>
+                <p style="color: #999999; font-size: 12px;">Stream millions <br>
+                of songs</p>
+            </div>
+            <div class="here3">
+                <p style="color: #dddddd; font-size: 12px;">Amazon Music</p>
+                <p style="color: #999999; font-size: 12px;">Stream millions <br>
+                of songs</p>
+            </div>
+            <div class="here3">
+                <p style="color: #dddddd; font-size: 12px;">Amazon Music</p>
+                <p style="color: #999999; font-size: 12px;">Stream millions <br>
+                of songs</p>
+            </div>
+            <div class="here3">
+                <p style="color: #dddddd; font-size: 12px;">Amazon Music</p>
+                <p style="color: #999999; font-size: 12px;">Stream millions <br>
+                of songs</p>
+            </div>
+            <div class="here3">
+            </div>
+            <div class="here3">
+            </div>
+        </div>
+    </footer>
+    <footer class="panel5">
+        <div class="panel5-content">
+            <p style="padding: 0px 7.2px;">Conditions of Use</p>
+            <p style="padding: 0px 7.2px;">Privacy Notice</p>
+            <p style="padding: 0px 7.2px;">Privacy Notice</p>
+            <p style="padding: 0px 7.2px;">Cunsumer Health Data Privacy Disclosure</p>
+            <p style="padding: 0px 7.2px;">Your Ads Privacy Choices</p>
+        </div>
+        <div class="p5-c">
+            <p style="padding: 0px 7.2px; margin-top: 5px;">© 2026 Demo Project</p>
+        </div>
+    </footer>
+    <footer class="panel6">
+        <div class="panel6-content">
+            <marquee  direction="left" scrollamount="10">
+                <p style="margin:5px 0; font-size:13px; color:hsl(0, 0%, 80%);">
+                     This is a frontend demo project created for educational purposes only.
+                </p>
+            </marquee>
+        </div>
+    </footer>
+</body>
+</html>
